@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import com.abdulbakiunvanli.ftteknoloji.annotations.DateNotNull;
+import com.abdulbakiunvanli.ftteknoloji.annotations.AnyNotNull;
 
 @Entity(name = "urun_yorum")
 public class UrunYorum {
@@ -32,15 +32,15 @@ public class UrunYorum {
 	private String yorum;
 
 	@Column(name = "yorum_tarihi", nullable = false)
-	@DateNotNull(message = "Yorum tarihi boş geçilemez.")
+	@AnyNotNull(message = "Yorum tarihi boş geçilemez.")
 	private LocalDate yorumTarihi;
 
 	@Column(name = "urun_id", nullable = false)
-	@NotNull(message= "urunId boş geçilemez.")
+	@NotNull(message = "urunId boş geçilemez.")
 	private Integer urunId;
 
 	@Column(name = "kullanici_id", nullable = false)
-	@NotNull(message= "kullaniciId boş geçilemez.")
+	@NotNull(message = "kullaniciId boş geçilemez.")
 	private Integer kullaniciId;
 
 	@ManyToOne(fetch = FetchType.EAGER)

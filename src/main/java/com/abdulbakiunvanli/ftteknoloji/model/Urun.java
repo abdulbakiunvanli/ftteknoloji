@@ -14,6 +14,8 @@ import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.abdulbakiunvanli.ftteknoloji.annotations.AnyNotNull;
+
 @Entity(name = "urun")
 public class Urun {
 
@@ -29,7 +31,8 @@ public class Urun {
 
 	@Column(name = "fiyat", nullable = false)
 	@DecimalMin(value = "0.0", message = "Fiyat en az 0.0 olabilir.")
-	@Digits(integer=15, fraction=2, message = "Geçerli fiyat giriniz (Decimal(15,2)).")
+	@Digits(integer = 15, fraction = 2, message = "Geçerli fiyat giriniz (Decimal(15,2)).")
+	@AnyNotNull(message = "Fiyat boş geçilemez.")
 	private BigDecimal fiyat;
 
 	@Column(name = "son_kullanma_tarihi")

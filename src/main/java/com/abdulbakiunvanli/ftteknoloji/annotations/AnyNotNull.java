@@ -12,8 +12,8 @@ import javax.validation.Payload;
 @Target({ ElementType.FIELD, ElementType.PARAMETER })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@Constraint(validatedBy = DateNotNullValidator.class)
-public @interface DateNotNull {
+@Constraint(validatedBy = AnyNotNullValidator.class)
+public @interface AnyNotNull {
 	
 	public String message();
 
