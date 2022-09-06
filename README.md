@@ -191,7 +191,7 @@ private ResponseEntity<List<Urun>> urunFindAllByNotExpired() {
 #### Case 3 - Bir kullanıcının yapmış olduğu yorumları listeleyen bir metot yazınız.
 
 ```http
-  GET /api/v1/case/3/urun/{id}/urun-yorum/date-between?startDate={startDate}&endDate={endDate}
+  GET /api/v1/case/3/kullanici/{id}/urun-yorum
 ```
 
 | Parametre | Tip     | Açıklama                | Örnek |
@@ -201,7 +201,7 @@ private ResponseEntity<List<Urun>> urunFindAllByNotExpired() {
 #### Case 4 - Bir kullanıcının belirli tarihler aralığında yapmış olduğu yorumları gösteren bir metot yazınız.
 
 ```http
-  GET /api/v1/case/4/urun/{id}/urun-yorum/date-between?startDate={startDate}&endDate={endDate}
+  GET /api/v1/case/4/kullanici/{id}/urun-yorum/date-between?startDate={startDate}&endDate={endDate}
 ```
 
 | Parametre | Tip     | Açıklama                | Örnek |
