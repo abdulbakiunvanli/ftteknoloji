@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.abdulbakiunvanli</groupId>
 	<artifactId>ftteknoloji</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>ftteknoloji</name>
 	<description>FT Teknoloji</description>
 	<properties>
