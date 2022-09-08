@@ -17,6 +17,7 @@ Kullanıcı, Ürün ve Ürün yorum tabloları için CRUD işlemlerini de ekledi
 - Springdoc OpenAPI UI
 
 **Not**: Lombok IDE üzerinde kurulu olmadığı durumda çalışmayabiliyor. Bu yüzden lombok kütüphanesini dahil etmedim.
+
 ## Case Çözümlerim
 
 #### Case 1 - Bir ürüne ait yorumları listeleyen bir metot yazınız.
