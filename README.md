@@ -5,6 +5,8 @@ Bu proje Spring Initializr(https://start.spring.io) ile oluşturuldu.
 
 `database.sql` içerisinde bu projede çalışırken kullandığım veri tabanının tam export edilmiş scripttir.(User dahil)
 
+Kullanıcı, Ürün ve Ürün yorum tabloları için CRUD işlemlerini de ekledim.
+
 #### Bağlılıklar
 
 - Spring boot (2.7.3)
